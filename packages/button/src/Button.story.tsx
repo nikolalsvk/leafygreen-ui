@@ -50,9 +50,11 @@ export default {
       defaultValue: 'button',
     },
     size: {
-      control: 'select',
-      options: Object.values(Size),
       defaultValue: Size.Default,
+      control: {
+        type: 'select',
+        options: Object.values(Size),
+      },
     },
     href: {
       control: 'text',
