@@ -21,9 +21,11 @@ export default {
   },
   argTypes: {
     size: {
-      control: 'select',
-      options: Object.values(Size),
       defaultValue: Size.Default,
+      control: {
+        type: 'select',
+        options: Object.values(Size),
+      },
     },
     glyph: { control: 'none' },
   },
