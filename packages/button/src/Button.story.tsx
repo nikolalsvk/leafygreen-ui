@@ -34,15 +34,19 @@ export default {
   },
   argTypes: {
     disabled: {
-      control: { type: 'boolean' },
+      type: 'boolean',
     },
     leftGlyph: {
-      options: Object.keys(glyphs),
-      control: { type: 'select' },
+      control: {
+        type: 'select',
+        options: Object.keys(glyphs),
+      },
     },
     rightGlyph: {
-      options: Object.keys(glyphs),
-      control: { type: 'select' },
+      control: {
+        type: 'select',
+        options: Object.keys(glyphs),
+      },
     },
     type: {
       control: 'select',

@@ -3,7 +3,7 @@ import IntrinsicElements from './IntrinsicElements';
 export const storybookArgTypes = {
   darkMode: {
     description: 'Render the component in dark mode.',
-    control: 'boolean',
+    type: 'boolean',
   },
   ref: {
     description: '`ref` passed to the component',
