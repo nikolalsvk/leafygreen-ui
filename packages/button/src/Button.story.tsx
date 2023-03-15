@@ -41,12 +41,14 @@ export default {
         type: 'select',
         options: Object.keys(glyphs),
       },
+      defaultValue: null,
     },
     rightGlyph: {
       control: {
         type: 'select',
         options: Object.keys(glyphs),
       },
+      defaultValue: null,
     },
     type: {
       control: 'select',
@@ -71,15 +73,7 @@ const Template: Story<ButtonStoryProps> = ({
   leftGlyph,
   rightGlyph,
   ...args
-}: ButtonStoryProps) => (
-  <Button
-    // @ts-expect-error
-    leftGlyph={leftGlyph ? <Icon glyph={leftGlyph} /> : undefined}
-    // @ts-expect-error
-    rightGlyph={rightGlyph ? <Icon glyph={rightGlyph} /> : undefined}
-    {...args}
-  />
-);
+}: ButtonStoryProps) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
